@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;700;800&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,183 +23,258 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <!-- Navbar Section -->
-      <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#hero-section">Ankit Raj</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero-section" class="hero-section position-relative overflow-hidden">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 z-1 py-5">
+              <p class="section-kicker mb-3">01 / INTRO</p>
+              <h5 class="text-uppercase fw-bold mb-3 subtitle">A Programmer</h5>
+              <h1 class="display-3 fw-bold mb-4 headline">
+                Hello, my name <br />
+                is Ankit Raj
+              </h1>
+              <p class="lead mb-5 description">
+                I am an avid learner and passionate programmer pursuing B.Tech
+                in Computer Science and Engineering from Narula Institute of
+                Technology, Kolkata. I enjoy building clean full-stack
+                experiences and keep improving through practical projects.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#projects" class="btn btn-primary-custom">Projects</a>
+                <a href="./public/Ankit Raj_Resume.pdf" class="btn btn-outline-custom">
+                  Resume
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 position-relative h-100 d-flex align-items-end justify-content-end p-0"
+            >
+              <div class="yellow-blob"></div>
+              <img
+                src="./images/Ankit-img.png"
+                alt="Ankit Raj"
+                class="img-fluid hero-img position-relative z-1"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="portfolio-section about-section">
         <div class="container">
-          <a class="navbar-brand" href="index.html"> Ankit Raj </a>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero-section">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacts</a>
-            </li>
-          </ul>
+          <div class="section-rule">
+            <span>02</span>
+            <span>About</span>
+          </div>
+          <div class="about-stage">
+            <div class="about-marquee" aria-hidden="true">DESIGNING WITH CODE</div>
+            <div class="about-portrait-card">
+              <div class="portrait-frame">
+                <img src="./images/Ankit-img.png" alt="Ankit Raj" />
+              </div>
+              <div class="floating-note note-one">
+                <span>Role</span>
+                Frontend Learner
+              </div>
+              <div class="floating-note note-two">
+                <span>Focus</span>
+                Full-stack UI
+              </div>
+            </div>
+            <div class="about-story-card">
+              <p class="section-kicker">Student developer</p>
+              <h2>
+                I build clean web experiences with a practical engineering
+                mindset.
+              </h2>
+              <p>
+                I am currently pursuing B.Tech in Computer Science and
+                Engineering from Narula Institute of Technology, Kolkata. My
+                work blends React, JavaScript fundamentals, API integration, and
+                responsive interface craft.
+              </p>
+              <div class="about-stats" aria-label="Profile highlights">
+                <span>
+                  <strong>03</strong>
+                  Projects shipped
+                </span>
+                <span>
+                  <strong>CSE</strong>
+                  B.Tech track
+                </span>
+                <span>
+                  <strong>UI</strong>
+                  Product thinking
+                </span>
+              </div>
+              <div class="skill-cloud" aria-label="Skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Bootstrap</span>
+                <span>API Integration</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-    </section>
-    <section class="hero-section position-relative overflow-hidden">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-lg-6 z-1 py-5">
-            <h5 class="text-uppercase fw-bold mb-3 subtitle">A Programmer</h5>
-            <h1 class="display-3 fw-bold mb-4 headline">
-              Hello, my name <br />
-              is Ankit Raj
-            </h1>
-            <p class="lead mb-5 description">
-              I am avid learner and a passionate programmer. I am currently
-              pursuing my B.Tech in Computer Science and Engineering from Narula
-              Institue of Technology , Kolkata. I have a strong foundation in
-              programming and a keen interest in full stack development. I am
-              always looking for new opportunities to learn and grow.
+      </section>
+
+      <section id="projects" class="portfolio-section projects-section">
+        <div class="container">
+          <div class="section-rule">
+            <span>03</span>
+            <span>Selected Projects</span>
+          </div>
+          <div class="projects-heading">
+            <h2 class="mega-title">PROJECTS</h2>
+            <p>
+              A small set of hands-on builds focused on interface clarity,
+              browser fundamentals, and practical API/data workflows.
             </p>
-            <div class="d-flex gap-3">
-              <a href="#projects" class="btn btn-primary-custom">Projects</a>
-              <a
-                href="./public/Ankit Raj_Resume.pdf"
-                class="btn btn-outline-custom"
-                >Resume</a
-              >
-            </div>
           </div>
-          <div
-            class="col-lg-6 position-relative h-100 d-flex align-items-end justify-content-end p-0"
-          >
-            <div class="yellow-blob"></div>
-            <img
-              src="./images/Ankit-img.png"
-              alt="Ankit Raj"
-              class="img-fluid hero-img position-relative z-1"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section><!-- About Section Removed --></section>
-    <section><!-- Skills Section --></section>
-    <section id="projects" class="py-5">
-      <div class="container text-center">
-        <h2 class="section-title mb-5">Projects</h2>
 
-        <!-- Project Card 1 -->
-        <div
-          class="card project-card border-0 rounded-4 shadow-sm mb-5 text-start overflow-hidden mx-auto"
-          style="max-width: 900px"
-        >
-          <div class="row g-0">
-            <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
-              <h3 class="project-title mb-3">Weather App</h3>
-              <p class="project-description text-muted mb-4">
-                A weather app built using React. It fetches weather data from an
-                API and displays it in a user-friendly interface.
-              </p>
-              <div>
-                <a
-                  href="/images/Weather_app_demo.mp4"
-                  class="btn btn-outline-custom rounded-pill px-4"
-                  target="_blank"
-                  >View Project</a
-                >
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="./images/Weather_app.png"
-                class="img-fluid project-img"
-                alt="Project 1"
-              />
-            </div>
-          </div>
-        </div>
+          <div class="project-list">
+            <a class="project-row" href="./images/Weather_app_demo.mp4" target="_blank">
+              <span class="project-number">01</span>
+              <span class="project-media">
+                <img src="./images/Weather_app.png" alt="Weather App preview" />
+              </span>
+              <span class="project-content">
+                <span class="project-type">React / API</span>
+                <strong>Weather App</strong>
+                <small>Live weather data presented through a clean, readable dashboard.</small>
+                <span class="project-tags">
+                  <span>React</span>
+                  <span>API</span>
+                  <span>CSS</span>
+                </span>
+              </span>
+              <span class="project-meta">
+                <span>2025</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </a>
 
-        <!-- Project Card 2 -->
-        <div
-          class="card project-card border-0 rounded-4 shadow-sm mb-5 text-start overflow-hidden mx-auto"
-          style="max-width: 900px"
-        >
-          <div class="row g-0 flex-md-row-reverse">
-            <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
-              <h3 class="project-title mb-3">Myntra Clone</h3>
-              <p class="project-description text-muted mb-4">
-                A Myntra clone built using React. It fetches data from an API
-                and displays it in a user-friendly interface.
-              </p>
-              <div>
-                <a
-                  href="./images/myntra-demo.mp4"
-                  class="btn btn-outline-custom rounded-pill px-4"
-                  target="_blank"
-                  >View Project</a
-                >
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="./images/myntra-clone.png"
-                class="img-fluid project-img"
-                alt="Myntra Clone Project"
-              />
-            </div>
-          </div>
-        </div>
+            <a class="project-row" href="./images/myntra-demo.mp4" target="_blank">
+              <span class="project-number">02</span>
+              <span class="project-media">
+                <img src="./images/myntra-clone.png" alt="Myntra Clone preview" />
+              </span>
+              <span class="project-content">
+                <span class="project-type">Commerce UI</span>
+                <strong>Myntra Clone</strong>
+                <small>Product browsing, layout structure, and dynamic store presentation.</small>
+                <span class="project-tags">
+                  <span>React</span>
+                  <span>Store UI</span>
+                  <span>JavaScript</span>
+                </span>
+              </span>
+              <span class="project-meta">
+                <span>2025</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </a>
 
-        <!-- Project Card 3 -->
-        <div
-          class="card project-card border-0 rounded-4 shadow-sm mb-5 text-start overflow-hidden mx-auto"
-          style="max-width: 900px"
-        >
-          <div class="row g-0">
-            <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
-              <h3 class="project-title mb-3">Simple Calculator</h3>
-              <p class="project-description text-muted mb-4">
-                A simple calculator built using HTML, CSS, and JavaScript. It
-                allows users to perform basic arithmetic operations and displays
-                the result in a user-friendly interface.
-              </p>
-              <div>
-                <a
-                  href="/images/Calculator_demo.mp4"
-                  class="btn btn-outline-custom rounded-pill px-4"
-                  target="_blank"
-                  >View Project</a
-                >
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="./images/Calculator.png"
-                class="img-fluid project-img"
-                alt="Project 1"
-              />
-            </div>
+            <a class="project-row" href="./images/Calculator_demo.mp4" target="_blank">
+              <span class="project-number">03</span>
+              <span class="project-media">
+                <img src="./images/Calculator.png" alt="Calculator preview" />
+              </span>
+              <span class="project-content">
+                <span class="project-type">Browser Tool</span>
+                <strong>Simple Calculator</strong>
+                <small>A focused arithmetic interface built with core web fundamentals.</small>
+                <span class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </span>
+              </span>
+              <span class="project-meta">
+                <span>2025</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </span>
+            </a>
           </div>
         </div>
+      </section>
+
+      <section class="portfolio-section experience-section">
+        <div class="container">
+          <div class="section-rule">
+            <span>04</span>
+            <span>Learning Path</span>
+          </div>
+          <div class="timeline">
+            <article class="timeline-card">
+              <div class="timeline-dot"></div>
+              <p class="section-kicker">Current</p>
+              <h3>Full-Stack Development</h3>
+              <p>
+                Building confidence through React projects, component thinking,
+                API workflows, and responsive page layouts.
+              </p>
+              <span>2026 - Present</span>
+            </article>
+            <article class="timeline-card">
+              <div class="timeline-dot"></div>
+              <p class="section-kicker">Foundation</p>
+              <h3>Computer Science Engineering</h3>
+              <p>
+                Studying core programming concepts while strengthening
+                development habits through consistent personal projects.
+              </p>
+              <span>B.Tech CSE</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-rule">
+          <span>05</span>
+          <span>Contact</span>
+        </div>
+        <div class="contact-panel">
+          <h2 class="section-title">Let us build something useful.</h2>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ankit-raj07062005/" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/Raj0706web" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+        <p class="text-center text-muted mt-5 mb-0 pb-4">Ankit Raj 2026</p>
       </div>
-    </section>
-    <section id="contact">
-      <!-- Contact Section -->
-      <div class="d-flex gap-4 fs-2 text-dark mt-5 py-5 justify-content-center">
-        <a href="#" class="text-reset text-decoration-none"
-          ><i class="bi bi-instagram"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/ankit-raj07062005/"
-          class="text-reset text-decoration-none"
-          ><i class="bi bi-linkedin"></i
-        ></a>
-        <a
-          href="https://github.com/Raj0706web"
-          class="text-reset text-decoration-none"
-          ><i class="bi bi-github"></i
-        ></a>
-      </div>
-      <p class="text-center text-muted mt-5 mb-5 pb-3">Ankit Raj 2026</p>
-    </section>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
